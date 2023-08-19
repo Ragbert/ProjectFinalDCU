@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proyecto Final de Diseño Centrado del Usuario</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+    <!-- Conexión previa a la fuente de Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Cargando fuentes desde Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+
+<!-- Encabezado de la página -->
+<header>
+    <!-- Título principal de la página -->
+    <h1>Listado de Tareas</h1>
+	<!-- Botón para iniciar sesión -->
+	<button id="login-btn">Iniciar sesión</button>
+</header>
+
+<body>
+    <!-- Formulario para ingresar los datos -->
+	<form id="formulario">
+		<label for="title">Título:</label>
+		<input type="text" id="title" name="title" >
+
+		<label for="subject">Materia:</label>
+		<input type="text" id="subject" name="subject" >
+
+		<label for="date">Fecha:</label>
+		<input type="date" id="date" >
+
+		<label for="time">Hora:</label>
+		<input type="time" id="time">
+
+		<label for="description">Descripción:</label>
+		<textarea id="description"></textarea>
+
+		<!-- Botones de control -->
+		<div class="botones">
+			<input type="reset" id="limpiar" value="Limpiar Imput">
+			<input type="submit" value="Agregar">
+		</div>
+	</form>
+
+	<!-- Tabla para mostrar los eventos -->
+	<table id="tabla">
+		<thead>
+			<tr>
+				<th>Título</th>
+				<th>Materia</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Descripción</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<!-- Se carga el script JavaScript -->
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definición del tipo de documento y configuración del juego de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Especificación de la compatibilidad con Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Configuración del viewport para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Trabajo final DCU</title>
+    <!-- Enlace al archivo de estilos CSS personalizados -->
+    <link rel="stylesheet" type="text/css" href="estilosF.css">
+    <!-- Enlace al archivo de estilos Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <h1 style="background: white;">Listado de Tareas</h1>
+    <!-- Formulario para iniciar sesión -->
+    <form action="" method="POST" id="form">
+        <div class="form">
+            <!-- Título del formulario -->
+            <h2 id="title-form">Inciar Sesión</h2>
+            <!-- Grupo de elementos para cargar imagen de perfil -->
+            <div class="grupo">
+                <img src="iconoFoto.jpg" id="imgPreview" width="200px" height="250px">
+                <input type="file" id="img" accept="image/*" onchange="previewImage(event, '#imgPreview')">
+            </div>
+            <!-- Grupo de elementos para ingresar nombre -->
+            <div class="grupo">
+                <input type="text" name="" id="name" autofocus><span class="barra"></span>
+                <label for="" id="nombre">Nombre</label>
+            </div>
+            <!-- Grupo de elementos para ingresar número de teléfono -->
+            <div class="grupo">
+                <input type="text" name="" id="number" autofocus><span class="barra"></span>
+                <label for="" id="telefono">Teléfono</label>
+            </div>
+            <!-- Grupo de elementos para ingresar correo electrónico -->
+            <div class="grupo">
+                <input type="email" name="" id="email" autofocus><span class="barra"></span>
+                <label for="" id="correo">Correo Electrónico</label>
+            </div>
+            <!-- Grupo de elementos para ingresar contraseña -->
+            <div class="grupo">
+                <input type="password" name="" id="password" autofocus><span class="barra"></span>
+                <label for="" id="contrasena">Contraseña</label>
+            </div>
+            <!-- Botón para iniciar sesión -->
+            <button type="submit" id="button"><b>Iniciar Sesión</b></button>
+            <!-- Enlace para acceder a otra página -->
+            <a href="index.html" id="access" hidden>Acceder</a>
+            <!-- Párrafo para mostrar mensajes de advertencia -->
+            <p class="warnings" id="warnings"></p>
+        </div>
+    </form>
+    <br> <br><br><br><br><br><br><br><br><br>
+    <!-- Se carga el script JavaScript -->
+    <script src="scriptF.js"></script>
+</body>
+<footer style="color: #fff;">
+    <!-- Pie de mi página con información personal -->
+    <b><p>Ragbert Francisco Polanco de Jesús<br></p></b>
+   <b><p>Matricula: 2022-0532</p></b></br>
+</footer>
+</html>

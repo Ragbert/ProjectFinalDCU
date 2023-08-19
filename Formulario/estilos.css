@@ -1,0 +1,156 @@
+/* Establece la propiedad box-sizing para todos los elementos para que el cálculo del tamaño incluya el borde */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f2f2f2;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 5px 10px;
+  font-size: 24px;
+}
+
+/* Estilos para el contenido principal */
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Estilos para los formularios */
+form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 20px;
+}
+
+/* Estilos para los encabezados */
+h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  position: relative;
+  left: 0;
+}
+
+/* Estilos para las etiquetas */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Estilos para los campos de entrada de texto, fecha, hora y área de texto */
+input[type="text"], input[type="date"], input[type="time"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el grupo de botones */
+.botones {
+  position: relative;
+  left: 0;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para el área de texto */
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* Estilos para los botones de restablecer y enviar */
+input[type="reset"], input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Estilos para los botones al pasar el mouse sobre ellos */
+input[type="reset"]:hover, input[type="submit"]:hover {
+  background-color: red;
+}
+
+/* Estilos para las tablas */
+table {
+  width: 97%;
+  margin: auto 10px;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+/* Estilos para las celdas de encabezado y datos */
+th, td {
+  text-align: left;
+  padding: 10px;
+  font-weight: 400;
+}
+
+/* Estilos para las celdas de encabezado */
+th {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+
+/* Estilos para filas pares */
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* Estilos para filas al pasar el mouse sobre ellas */
+tr:hover {
+  background-color: #e5e5f5;
+}
+
+/* Estilos para el botón de inicio de sesión */
+#login-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+  float: right;
+}
+
+/* Estilos para el botón de inicio de sesión al pasar el mouse sobre él */
+#login-btn:hover {
+  background-color: #afa;
+  color: black;
+  background-color: white;
+}
